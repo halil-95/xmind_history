@@ -1,0 +1,40 @@
+<header>
+
+{{!-- создание html шаблона  
+пример: 
+    с тремя человеками который занимается производством каробок
+    1 первый чел который занимаетя производством.
+    --}}
+    <div class="header_container hc">
+
+        {{!-- menu manettas --}}
+        <div class="hc__left">
+            <div class="hc__left__menu">
+                <div>{{logo.icon}}</div>
+            </div>
+            <div class="hc__left__logo">
+                <div>{{logo.logo}}</div>
+            </div>
+        </div>
+        
+        {{!-- middle menu container --}}
+        <div class="hc__menu menu_name">
+            <ul>
+                {{#each h_menu}}
+                    <li>{{this}}</li>
+                {{/each}}
+            </ul>
+        </div>
+       
+        {{!-- right basket icon --}}
+        <div class="hc__right">
+            <ul>
+                {{#each right_icon}}
+                    <li>{{this}}</li>
+                {{/each }}
+            </ul>
+        </div>
+
+    </div>
+
+</header>

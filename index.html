@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/font/fontello/css/fontello.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
-    <h1>hello</h1>
-    <p>bay</p>
+    <!-- Header -->
+    <header class="header_block">
+        <!-- Logo and menu -->
+        <div class="header_block__left">
+            <div class="header_block__left__logo">
+                <b>codertime</b>
+            </div>
+            <nav class="header_block__left__menu">
+                <ul>
+                    <li>Seafood</li>
+                    <li>Meat</li>
+                    <li>Fruit & Vegetables</li>
+                    <li>More</li>
+                    <li>Discover</li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Basket and Profile Icons -->
+        <div class="header_block__right">
+            <ul class="header_icons">
+                <li><img src="assets/img/basket.png" alt="Shopping basket icon"></li>
+                <li><img src="assets/img/pm.png" alt="Profile icon"></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Main Slider -->
+    <section class="slide">
+        <div class="slide__rec">
+            <h2 class="slide__rec_title">Weekly Specials</h2>
+            <p class="slide__rec_desc">Exclusive deals and offers!</p>
+        </div>
+        <div class="slide__images">
+            <img src="src/images/slider-image.webp" alt="Slider main image">
+        </div>
+        <div class="slide__btn">
+            <button class="slide__btn_left" aria-label="Previous slide">Previous</button>
+            <button class="slide__btn_right" aria-label="Next slide">Next</button>
+        </div>
+    </section>
+
+    <!-- Weekly Specials Section -->
+    <section class="menuSeeFood">
+        <div class="menuSeeFood__icon"><img src="" alt="Weekly Specials Icon"></div>
+        <h2 class="menuSeeFood__title">Weekly Specials</h2>
+        <p class="menuSeeFood__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam eveniet laboriosam...
+        </p>
+
+        <!-- Specials List -->
+        <ul class="menuSeeFood__list">
+            <li class="menuSeeFood__list_item mli">
+                <div class="mli__image">
+                    <img src="assets/img/special1.png" alt="Grumber Calamary">
+                </div>
+                <h3 class="mli__title">Grumber Calamary</h3>
+                <p class="mli__desc">Lorem ipsum dolor sit amet consectetur</p>
+                <div class="mli__price priceBox">
+                    <p class="priceBox__usd">$</p>
+                    <p class="priceBox__price">14.90</p>
+                    <p class="priceBox__desc">per pack</p>
+                </div>
+                <div class="mli__foodFrom">
+                    <img src="assets/img/flag.png" alt="International flag icon">
+                    <p>International</p>
+                </div>
+            </li>
+        </ul>
+
+        <!-- Navigation Buttons -->
+        <div class="menuSeeFood__btn">
+            <button class="menuSeeFood__btn_left" aria-label="Previous item">Previous</button>
+            <button class="menuSeeFood__btn_right" aria-label="Next item">Next</button>
+        </div>
+    </section>
+
+    <!-- Browse Recipes by Cooking Time -->
+    <section class="baseInfo">
+        <div class="baseInfo__icon"><img src="" alt="Browse recipes icon"></div>
+        <h2 class="baseInfo__title">Browse Recipes by Cooking Time</h2>
+        <p class="baseInfo__desc">Explore quick and easy recipes to suit your schedule.</p>
+
+        <div class="baseInfo__list">
+            <div class="baseInfo__list__item">
+                <img src="assets/img/time-icon.png" alt="Ready in 30 minutes icon">
+                <h3 class="baseInfo__list__title">Ready in 30 Minutes</h3>
+                <p class="baseInfo__list__desc">Perfect for quick meals.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Callback Subscription Section -->
+    <section class="callback">
+        <h2 class="callback__title">Subscribe Today</h2>
+        <p class="callback__text">Get 10% off your first order</p>
+        <form class="callback__form">
+            <input type="email" placeholder="Your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h3 class="footer__title">Contact Us</h3>
+        <p class="footer__text">We're here to help with any questions or concerns.</p>
+        <ul class="footer__list">
+            <li class="footer__list_item">
+                <div class="footer__icon">
+                    <img src="assets/img/icon-phone.png" alt="Phone icon">
+                </div>
+                <p class="footer__desc">Call us at (123) 456-7890</p>
+            </li>
+        </ul>
+    </footer>
+
 </body>
+
 </html>
