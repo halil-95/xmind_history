@@ -1,0 +1,60 @@
+// base 
+*
+    box-sizing: border-box
+
+
+
+
+body 
+    width width_header
+    margin: auto
+    padding 20px
+
+header
+    display: flex
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-items: center
+    max-width: 100%
+    margin: 25px auto
+    padding 25px 10px
+    border 1px solid #000
+    border-radius(25px)
+
+    
+    & > div
+        flex-grow: 1
+    
+    & > nav
+        flex-grow: 2
+        
+.header_block__left
+    max-width 20%
+
+.header_block__menu 
+    max-width: 50%
+    
+    ul
+        display: flex
+        list-style-type none
+        gap 20px 20px
+
+        li  
+            border 1px solid #000
+
+.header_block__right
+    max-width: 20%
+
+    ul
+        display: flex
+        max-width: 100%
+        border 1px solid #000
+
+        li
+            max-width 50%
+
+            img 
+                width 50px
+
+
+
