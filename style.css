@@ -152,6 +152,7 @@ body {
   width: width_header;
   margin: auto;
   padding: 20px;
+  border: 2px solid #000;
 }
 header {
   display: flex;
@@ -193,7 +194,6 @@ title {
   height: 25px;
   left: 0px;
   bottom: 0;
-  border: 1px solid #000;
 }
 .header_block__left__logo {
   text-transform: uppercase;
@@ -207,6 +207,19 @@ title {
   align-items: center;
   flex-wrap: nowrap;
   gap: 20px 20px;
+}
+.header_block__menu ul li {
+  position: relative;
+  margin-right: 25px;
+}
+.header_block__menu ul li::after {
+  position: absolute;
+  font-family: "fontello";
+  content: "\e80c";
+  max-width: 100%;
+  right: -18px;
+  font-size: 0.7em;
+  top: 2px;
 }
 .header_block__right ul {
   display: flex;
