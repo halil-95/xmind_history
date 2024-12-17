@@ -1,1 +1,37 @@
+// test  
+.hbm, .hbl, .hbr, 
+div
+    border 1px solid #000
+
+header
+    background: red
+    width: inherit
+    
+.container 
+    width: 90%
+    margin: 0 auto
+    background: yellow
+
+.header_block,
+.hbl,
+.hbm > ul,
+.hbr > ul
+    display: flex
+    justify-content: space-between
+    flex-direction: row
+    flex-wrap: nowrap
+    border 1px solid #000
+    align-items: center
+
+.hbl > ul,
+.hbr > ul
+    justify-content: center
+.hbl
+    flex-grow: 0
+    flex-shrink: 2
+    flex-basis 20%;
+.hbr
+    flex-grow: 0
+    flex-basis 10%;
+    flex-shrink: 2
 
